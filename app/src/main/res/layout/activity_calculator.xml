@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/calc_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!--Layout for the first Lines of  Butttons -->
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <Button
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:id="@+id/button_clear"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                 android:text="C"
+                 android:textSize="30sp"
+                 android:textStyle="bold"
+                 android:layout_weight="1"
+                 android:textColor="@color/FunctionalButtonText"
+                 android:background="@color/FunctionalButtonBG"
+                 android:minHeight="80dp"
+                 android:onClick="ClearButton"/>
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/button_percentage"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                 android:text="%"
+                 android:textSize="30sp"
+                 android:textStyle="bold"
+                 android:textColor="@color/FunctionalButtonText"
+                 android:background="@color/FunctionalButtonBG"
+                 android:layout_weight="1"
+                 android:minHeight="80dp"
+                 android:onClick="PercentageButton"/>
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/button_divide"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                 android:text="/"
+                 android:textSize="30sp"
+                 android:textStyle="bold"
+                 android:textColor="@color/FunctionalButtonText"
+                 android:background="@color/FunctionalButtonBG"
+                 android:layout_weight="1"
+                 android:minHeight="80dp"
+                 android:onClick="DivideButton"/>
+
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/button_multiply"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                 android:text="X"
+                 android:textSize="30sp"
+                 android:textStyle="bold"
+                 android:textColor="@color/FunctionalButtonText"
+                 android:background="@color/FunctionalButtonBG"
+                 android:layout_weight="1"
+                 android:minHeight="80dp"
+                 android:onClick="MultiplyButton"/>
+
+         </LinearLayout>
+
+        <!--Layout for the second line of  Butttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_seven"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="7"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonSeven"
+            />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_eight"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="8"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonEight"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_nine"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="9"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonNine" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_subtraction"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/FunctionalButtonText"
+                android:background="@color/FunctionalButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="SubtractionButton"/>
+        </LinearLayout>
+
+        <!-- Third lines of buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_four"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="4"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonFour" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_five"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="5"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonFive"/>
+
+            <Button
+                android:id="@+id/button_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="6"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonSix"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_addition"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/FunctionalButtonText"
+                android:background="@color/FunctionalButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="AdditionButton"/>
+        </LinearLayout>
+
+        <!-- Fourth Lines of Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_one"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/NumberButtonText"
+            android:background="@color/NumberlButtonBG"
+            android:layout_weight="1"
+            android:minHeight="80dp"
+                android:onClick="ButtonOne" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_two"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="2"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonTwo"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_three"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ButtonThree"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_equal"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="="
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/FunctionalButtonText"
+                android:background="@color/FunctionalButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="EqualButton"/>
+        </LinearLayout>
+
+        <!-- Fifth line of Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_dot"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="."
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/NumberButtonText"
+            android:background="@color/NumberlButtonBG"
+            android:layout_weight="1"
+            android:minHeight="80dp"
+                android:onClick="ButtonDot"  />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_zero"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="0"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/NumberButtonText"
+                android:background="@color/NumberlButtonBG"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:onClick="ZeroButton"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    
+
+
+
+</LinearLayout>
